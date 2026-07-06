@@ -8,7 +8,7 @@ lavalink:
   server:
     password: "love-for-oasisworld-love-the-community"
     sources:
-      youtube: false
+      youtube: true
       bandcamp: true
       soundcloud: true
       twitch: true
