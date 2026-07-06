@@ -1,0 +1,51 @@
+server:
+  port: 10000
+  address: 0.0.0.0
+lavalink:
+  plugins:
+    - dependency: "me.rohank05:lavalink-filter-plugin:0.0.4"
+      repository: "https://jitpack.io"
+  server:
+    password: "love-for-oasisworld-love-the-community"
+    sources:
+      youtube: false
+      bandcamp: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      http: true
+      local: false
+    filters: # Natively supported filters
+      volume: true
+      equalizer: true
+      timescale: true
+      pitch: true
+      tremolo: true
+      vibrato: true
+      distortion: true
+      rotation: true
+      channelMix: true
+      lowPass: true
+    bufferDurationMs: 400
+    frameBufferDurationMs: 5000
+    recordingBufferDurationMs: 4000
+    isrc: true
+    playerUpdateInterval: 5
+    youtubePlaylistLoadLimit: 6
+    playerAnalyticsIntervalMs: 10000
+    historicalMetricsBufferSize: 1052
+logging:
+  file:
+    path: ./logs/
+
+  level:
+    root: INFO
+    lavalink: INFO
+
+  request:
+    enabled: true
+    includeClientInfo: true
+    includeHeaders: false
+    includeQueryString: true
+    includePayload: true
+    maxPayloadLength: 10000
