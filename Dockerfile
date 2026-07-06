@@ -1,3 +1,4 @@
 FROM ghcr.io/lavalink-devs/lavalink:4
-COPY application.yml /opt/lavalink/application.yml
+WORKDIR /opt/Lavalink
+COPY application.yml /opt/Lavalink/application.yml
 ENTRYPOINT ["java", "-jar", "Lavalink.jar"]
